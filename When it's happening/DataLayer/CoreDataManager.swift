@@ -12,7 +12,7 @@ class CoreDataManager {
   
   private init() { }
   
-  public let shared = CoreDataManager()
+  public static let shared = CoreDataManager()
   
   lazy var persistentContainer: NSPersistentContainer = {
     let container = NSPersistentContainer(name: "DateModel")

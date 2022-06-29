@@ -14,6 +14,7 @@
 		498D05EF286CAC9A00345479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498D05ED286CAC9A00345479 /* LaunchScreen.storyboard */; };
 		498D05F9286CB0CA00345479 /* WhatsHappeningListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D05F8286CB0CA00345479 /* WhatsHappeningListScreen.swift */; };
 		498D0602286CB38200345479 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D0601286CB38200345479 /* CoreDataManager.swift */; };
+		498D0605286CB4BE00345479 /* WhatsHappeningService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D0604286CB4BE00345479 /* WhatsHappeningService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		498D05F0286CAC9A00345479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		498D05F8286CB0CA00345479 /* WhatsHappeningListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsHappeningListScreen.swift; sourceTree = "<group>"; };
 		498D0601286CB38200345479 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		498D0604286CB4BE00345479 /* WhatsHappeningService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsHappeningService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		498D05FB286CB12300345479 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				498D0606286CB90900345479 /* ViewModels */,
 				498D05E8286CAC9900345479 /* DataModel.xcdatamodeld */,
 				498D0601286CB38200345479 /* CoreDataManager.swift */,
 			);
@@ -114,6 +117,7 @@
 		498D05FE286CB2AC00345479 /* BusinessLayer */ = {
 			isa = PBXGroup;
 			children = (
+				498D0603286CB4AC00345479 /* Services */,
 				498D05FC286CB27000345479 /* Controllers */,
 			);
 			path = BusinessLayer;
@@ -132,6 +136,21 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		498D0603286CB4AC00345479 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				498D0604286CB4BE00345479 /* WhatsHappeningService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		498D0606286CB90900345479 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				498D05E0286CAC9900345479 /* AppDelegate.swift in Sources */,
+				498D0605286CB4BE00345479 /* WhatsHappeningService.swift in Sources */,
 				498D05EA286CAC9900345479 /* DataModel.xcdatamodeld in Sources */,
 				498D0602286CB38200345479 /* CoreDataManager.swift in Sources */,
 				498D05F9286CB0CA00345479 /* WhatsHappeningListScreen.swift in Sources */,
