@@ -13,6 +13,7 @@
 		498D05EC286CAC9A00345479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498D05EB286CAC9A00345479 /* Assets.xcassets */; };
 		498D05EF286CAC9A00345479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498D05ED286CAC9A00345479 /* LaunchScreen.storyboard */; };
 		498D05F9286CB0CA00345479 /* WhatsHappeningListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D05F8286CB0CA00345479 /* WhatsHappeningListScreen.swift */; };
+		498D0602286CB38200345479 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D0601286CB38200345479 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		498D05EE286CAC9A00345479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		498D05F0286CAC9A00345479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		498D05F8286CB0CA00345479 /* WhatsHappeningListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsHappeningListScreen.swift; sourceTree = "<group>"; };
+		498D0601286CB38200345479 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				498D05E8286CAC9900345479 /* DataModel.xcdatamodeld */,
+				498D0601286CB38200345479 /* CoreDataManager.swift */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			files = (
 				498D05E0286CAC9900345479 /* AppDelegate.swift in Sources */,
 				498D05EA286CAC9900345479 /* DataModel.xcdatamodeld in Sources */,
+				498D0602286CB38200345479 /* CoreDataManager.swift in Sources */,
 				498D05F9286CB0CA00345479 /* WhatsHappeningListScreen.swift in Sources */,
 				498D05E2286CAC9900345479 /* SceneDelegate.swift in Sources */,
 			);
