@@ -100,9 +100,8 @@
 		498D05FB286CB12300345479 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				498D0608286CBA7000345479 /* CoreData */,
 				498D0606286CB90900345479 /* ViewModels */,
-				498D05E8286CAC9900345479 /* DataModel.xcdatamodeld */,
-				498D0601286CB38200345479 /* CoreDataManager.swift */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -151,6 +150,15 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		498D0608286CBA7000345479 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				498D05E8286CAC9900345479 /* DataModel.xcdatamodeld */,
+				498D0601286CB38200345479 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
