@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		498D05E0286CAC9900345479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D05DF286CAC9900345479 /* AppDelegate.swift */; };
 		498D05E2286CAC9900345479 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D05E1286CAC9900345479 /* SceneDelegate.swift */; };
-		498D05EA286CAC9900345479 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 498D05E8286CAC9900345479 /* DataModel.xcdatamodeld */; };
 		498D05EC286CAC9A00345479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498D05EB286CAC9A00345479 /* Assets.xcassets */; };
 		498D05EF286CAC9A00345479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498D05ED286CAC9A00345479 /* LaunchScreen.storyboard */; };
-		498D05F9286CB0CA00345479 /* WhatsHappeningListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D05F8286CB0CA00345479 /* WhatsHappeningListScreen.swift */; };
+		498D05F9286CB0CA00345479 /* ItemsListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D05F8286CB0CA00345479 /* ItemsListScreen.swift */; };
 		498D0602286CB38200345479 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D0601286CB38200345479 /* CoreDataManager.swift */; };
-		498D0605286CB4BE00345479 /* WhatsHappeningService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D0604286CB4BE00345479 /* WhatsHappeningService.swift */; };
+		498D0605286CB4BE00345479 /* ItemsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D0604286CB4BE00345479 /* ItemsService.swift */; };
+		499F8A77286CBB7A00CB2570 /* ItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F8A76286CBB7A00CB2570 /* ItemsController.swift */; };
+		499F8A79286CBB8B00CB2570 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F8A78286CBB8A00CB2570 /* Controller.swift */; };
+		499F8A7B286CC67400CB2570 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F8A7A286CC67400CB2570 /* ItemViewModel.swift */; };
+		499F8A7D286CEB1800CB2570 /* AddItemScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F8A7C286CEB1800CB2570 /* AddItemScreen.swift */; };
+		499F8A7E286CEF3200CB2570 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 498D05E8286CAC9900345479 /* DataModel.xcdatamodeld */; };
+		499F8A80286CF1CB00CB2570 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499F8A7F286CF1CB00CB2570 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +30,14 @@
 		498D05EB286CAC9A00345479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		498D05EE286CAC9A00345479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		498D05F0286CAC9A00345479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		498D05F8286CB0CA00345479 /* WhatsHappeningListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsHappeningListScreen.swift; sourceTree = "<group>"; };
+		498D05F8286CB0CA00345479 /* ItemsListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsListScreen.swift; sourceTree = "<group>"; };
 		498D0601286CB38200345479 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		498D0604286CB4BE00345479 /* WhatsHappeningService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsHappeningService.swift; sourceTree = "<group>"; };
+		498D0604286CB4BE00345479 /* ItemsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsService.swift; sourceTree = "<group>"; };
+		499F8A76286CBB7A00CB2570 /* ItemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsController.swift; sourceTree = "<group>"; };
+		499F8A78286CBB8A00CB2570 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		499F8A7A286CC67400CB2570 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		499F8A7C286CEB1800CB2570 /* AddItemScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemScreen.swift; sourceTree = "<group>"; };
+		499F8A7F286CF1CB00CB2570 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,8 @@
 		498D05FC286CB27000345479 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				499F8A78286CBB8A00CB2570 /* Controller.swift */,
+				499F8A76286CBB7A00CB2570 /* ItemsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -125,7 +137,8 @@
 		498D05FF286CB32A00345479 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				498D05F8286CB0CA00345479 /* WhatsHappeningListScreen.swift */,
+				498D05F8286CB0CA00345479 /* ItemsListScreen.swift */,
+				499F8A7C286CEB1800CB2570 /* AddItemScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -133,6 +146,7 @@
 		498D0600286CB33200345479 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				499F8A7F286CF1CB00CB2570 /* ItemCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -140,7 +154,7 @@
 		498D0603286CB4AC00345479 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				498D0604286CB4BE00345479 /* WhatsHappeningService.swift */,
+				498D0604286CB4BE00345479 /* ItemsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -148,6 +162,7 @@
 		498D0606286CB90900345479 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				499F8A7A286CC67400CB2570 /* ItemViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -232,11 +247,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				498D05E0286CAC9900345479 /* AppDelegate.swift in Sources */,
-				498D0605286CB4BE00345479 /* WhatsHappeningService.swift in Sources */,
-				498D05EA286CAC9900345479 /* DataModel.xcdatamodeld in Sources */,
+				499F8A7E286CEF3200CB2570 /* DataModel.xcdatamodeld in Sources */,
+				498D0605286CB4BE00345479 /* ItemsService.swift in Sources */,
+				499F8A80286CF1CB00CB2570 /* ItemCell.swift in Sources */,
 				498D0602286CB38200345479 /* CoreDataManager.swift in Sources */,
-				498D05F9286CB0CA00345479 /* WhatsHappeningListScreen.swift in Sources */,
+				499F8A77286CBB7A00CB2570 /* ItemsController.swift in Sources */,
+				499F8A7B286CC67400CB2570 /* ItemViewModel.swift in Sources */,
+				499F8A7D286CEB1800CB2570 /* AddItemScreen.swift in Sources */,
+				498D05F9286CB0CA00345479 /* ItemsListScreen.swift in Sources */,
 				498D05E2286CAC9900345479 /* SceneDelegate.swift in Sources */,
+				499F8A79286CBB8B00CB2570 /* Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -358,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -378,6 +398,7 @@
 				DEVELOPMENT_TEAM = 3GTE9X3BX2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "When it's happening/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "What's Happening";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -406,6 +427,7 @@
 				DEVELOPMENT_TEAM = 3GTE9X3BX2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "When it's happening/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "What's Happening";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";

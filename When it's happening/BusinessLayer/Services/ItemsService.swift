@@ -9,21 +9,21 @@ import Foundation
 import UIKit
 import CoreData
 
-class WhatsHappeningService {
+class ItemsService {
   
   private var context: NSManagedObjectContext
   
-  static let shared = WhatsHappeningService(dataManager: CoreDataManager.shared)
+  static let shared = ItemsService(dataManager: CoreDataManager.shared)
   
   private init(dataManager: CoreDataManager) {
     
     self.context = dataManager.dataManager
   }
   
-  func get() -> [WhatsHappening] {
+  func get() -> [Item] {
     
-    var items = [WhatsHappening]()
-    let request: NSFetchRequest<WhatsHappening> = WhatsHappening.fetchRequest()
+    var items = [Item]()
+    let request: NSFetchRequest<Item> = Item.fetchRequest()
     
     do {
       
@@ -38,7 +38,7 @@ class WhatsHappeningService {
   
   func save(title: String, date: Date) -> Bool {
     
-    let model = WhatsHappening(context: context)
+    let model = Item(context: context)
     model.id = UUID()
     model.title = title
     model.date = date
@@ -57,7 +57,7 @@ class WhatsHappeningService {
   
   func remove(id: UUID) {
     
-    let request: NSFetchRequest<WhatsHappening> = WhatsHappening.fetchRequest()
+    let request: NSFetchRequest<Item> = Item.fetchRequest()
     request.predicate = NSPredicate(format: "id=%@", id.uuidString)
     
     do {
@@ -76,7 +76,7 @@ class WhatsHappeningService {
   
   func update(id: UUID, title: String, date: Date) {
     
-    let request: NSFetchRequest<WhatsHappening> = WhatsHappening.fetchRequest()
+    let request: NSFetchRequest<Item> = Item.fetchRequest()
     request.predicate = NSPredicate(format: "id=%@", id.uuidString)
     
     do {
